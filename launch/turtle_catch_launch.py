@@ -5,10 +5,10 @@ from launch.substitutions import LaunchConfiguration
 
 
 def generate_launch_description():
-    spawn_frequency = DeclareLaunchArgument("spawn_frequency", default_value="5.0",
+    spawn_frequency = DeclareLaunchArgument("spawn_frequency", default_value="1.0",
         description="Frequency at which to spawn new turtles")
 
-    catch_distance = DeclareLaunchArgument("catch_distance", default_value="0.5",
+    catch_distance = DeclareLaunchArgument("catch_distance", default_value="0.1",
         description="Distance threshold for catching turtles")
 
     return LaunchDescription([
