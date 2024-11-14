@@ -32,7 +32,7 @@ def generate_launch_description():
             executable="controller",
             name="turtle_controller",
             parameters=[{
-                "spawn_frequency": LaunchConfiguration('catch_distance')
+                "catch_distance_threshold": LaunchConfiguration('catch_distance')
             }]
         ),
         Node(
@@ -40,7 +40,7 @@ def generate_launch_description():
             executable="catch_them_all",
             name="catch_them_all",
             parameters=[{
-                "spawn_frequency": LaunchConfiguration('catch_distance')
+                "catch_distance": LaunchConfiguration('catch_distance')
             }]
         )
     ])
