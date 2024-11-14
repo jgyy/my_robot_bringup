@@ -13,7 +13,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         spawn_frequency,
-        catch_frequency,
+        catch_distance,
         Node(
             package="turtlesim",
             executable="turtlesim_node",
